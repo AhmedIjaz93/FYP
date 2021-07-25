@@ -1,8 +1,12 @@
 # FYP
 
 
-use
+Both HTML forms are in 
+```
+./api/routes
+```
 
-```
-localhost:9000/year/[yearnumber]
-```
+One form is only for year (you can give past, present or future years)
+
+and other one is for parameters
+
