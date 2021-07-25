@@ -2,7 +2,9 @@ import React from "react";
 const Dashboard = (props) => {
     return (
         <>
+        
         <header class="navbar navbar-light sticky-top bg-light flex-md-nowrap p-0 shadow">
+            
             <a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"> <strong>Ginni Prediction System</strong></a>
             <button class="navbar-toggler position-absolute d-md-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu" aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -20,6 +22,7 @@ const Dashboard = (props) => {
         </header>
 
         <div class="container-fluid">
+         
             <div class="row">
                 <nav id="sidebarMenu" class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
                 <div class="position-sticky pt-3">
@@ -77,6 +80,21 @@ const Dashboard = (props) => {
                 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
                 <h2>Section title</h2>
                 <div class="table-responsive">
+                    <div class="container" style={{backgorundColor: "red"}}>
+       
+                        <h4>Predict Earthquake</h4>
+
+
+                        <form action="http://localhost:9000/year" method="POST">
+                            <div class="form-group">
+                                <label for="ISBN">Year</label>
+                                <input class="form-control" name="year_id"/>
+                            
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                    
+                        </form>
+                    </div>
                     <table class="table table-striped table-sm">
                     <thead>
                         <tr>

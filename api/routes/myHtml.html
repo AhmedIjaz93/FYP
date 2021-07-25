@@ -1,0 +1,53 @@
+<div class="container">
+    <hr>
+    <h1>Create New Book</h1>
+    <hr>
+
+    <form action="http://localhost:9000/prediction" method="POST">
+        <div class="form-group">
+            <label for="ISBN">Year</label>
+            <input class="form-control" name="year">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Temperature</label>
+            <input class="form-control" name="temp">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Pressure</label>
+            <input class="form-control" name="pressure">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">StaticReservoir</label>
+            <input class="form-control" name="rstatic">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">FlowingReservoir</label>
+            <input class="form-control" name="rflow">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">Sediments</label>
+            <input class="form-control" name="sediment">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">EnergyReleased</label>
+            <input class="form-control" name="erelease">
+        </div>
+
+        <div class="form-group">
+            <label for="Title">RainFall</label>
+            <input class="form-control" name="rain">
+        </div>
+        
+        <div class="form-group">
+            <label for="Title">YearOfLastEarthQuake</label>
+            <input class="form-control" name="lastEarthQuake">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
