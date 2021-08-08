@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', yolo:"Dvdzx"  });
 });
 
-router.get("/year/:year_id", function (req, res, next) {
+router.get("/past/:year_id", function (req, res, next) {
 
   
   if(req.params.year_id==="1984"){
