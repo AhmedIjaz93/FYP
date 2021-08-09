@@ -8,82 +8,82 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express', yolo:"Dvdzx"  });
 });
 
-router.get("/past/:year_id", function (req, res, next) {
-
+router.get("/past", function (req, res, next) {
+  console.log(req.query.year_id)
   
-  if(req.params.year_id==="1984"){
+  if(req.query.year_id==="1984"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1985"){
+  }else if(req.query.year_id==="1985"){
     res.render('earthquake', { prob: 'high', mag: '4.0-5.0'});
-  }else if(req.params.year_id==="1986"){
+  }else if(req.query.year_id==="1986"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1987"){
+  }else if(req.query.year_id==="1987"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1988"){
+  }else if(req.query.year_id==="1988"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1989"){
+  }else if(req.query.year_id==="1989"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1990"){
+  }else if(req.query.year_id==="1990"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1991"){
+  }else if(req.query.year_id==="1991"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1992"){
+  }else if(req.query.year_id==="1992"){
     res.render('earthquake', { prob: 'high', mag: '5.0-6.0'});
-  }else if(req.params.year_id==="1993"){
+  }else if(req.query.year_id==="1993"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1994"){
+  }else if(req.query.year_id==="1994"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1995"){
+  }else if(req.query.year_id==="1995"){
     res.render('earthquake', { prob: 'high', mag: '5.0-6.0'});
-  }else if(req.params.year_id==="1996"){
+  }else if(req.query.year_id==="1996"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1997"){
+  }else if(req.query.year_id==="1997"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="1998"){
+  }else if(req.query.year_id==="1998"){
     res.render('earthquake', { prob: 'high', mag: '5.0-6.0'});
-  }else if(req.params.year_id==="1999"){
+  }else if(req.query.year_id==="1999"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2000"){
+  }else if(req.query.year_id==="2000"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2001"){
+  }else if(req.query.year_id==="2001"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2002"){
+  }else if(req.query.year_id==="2002"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2003"){
+  }else if(req.query.year_id==="2003"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2004"){
+  }else if(req.query.year_id==="2004"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2005"){
+  }else if(req.query.year_id==="2005"){
     res.render('earthquake', { prob: 'high', mag: '6.0-8.0'});
-  }else if(req.params.year_id==="2006"){
+  }else if(req.query.year_id==="2006"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2007"){
+  }else if(req.query.year_id==="2007"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2008"){
+  }else if(req.query.year_id==="2008"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2009"){
+  }else if(req.query.year_id==="2009"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2010"){
+  }else if(req.query.year_id==="2010"){
     res.render('earthquake', { prob: 'high', mag: '5.0-6.0'});
-  }else if(req.params.year_id==="2011"){
+  }else if(req.query.year_id==="2011"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2012"){
+  }else if(req.query.year_id==="2012"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2013"){
+  }else if(req.query.year_id==="2013"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2014"){
+  }else if(req.query.year_id==="2014"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2015"){
+  }else if(req.query.year_id==="2015"){
     res.render('earthquake', { prob: 'high', mag: '6.0-8.0'});
-  }else if(req.params.year_id==="2016"){
+  }else if(req.query.year_id==="2016"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2017"){
+  }else if(req.query.year_id==="2017"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2018"){
+  }else if(req.query.year_id==="2018"){
     res.render('earthquake', { prob: 'low'});
-  }else if(req.params.year_id==="2019"){
+  }else if(req.query.year_id==="2019"){
     res.render('earthquake', { prob: 'moderate', mag: '4.0-6.0'});
-  }else if(req.params.year_id==="2020"){
+  }else if(req.query.year_id==="2020"){
     res.render('earthquake', { prob: 'moderate', mag: '6.0-8.0'});
   }else{
     res.render('error', { message: 'kindly enter from given range for prediciton [1984-2020]'});
@@ -91,23 +91,23 @@ router.get("/past/:year_id", function (req, res, next) {
   return("sgfsvdfc")
 });
 
-router.get("/future/:year_id", function (req, res, next) {
+router.get("/future", function (req, res, next) {
  console.log(":::::::::inside",req)
   
- if(parseInt(req.params.year_id)-2020<2.5){
+ if(parseInt(req.query.year_id)-2020<2.5){
     res.render('earthquake', { prob: 'low'});
-  }else if((parseInt(req.params.year_id)-2020)<5){
+  }else if((parseInt(req.query.year_id)-2020)<5){
     res.render('earthquake', { prob: 'moderate', mag: 'Exepected is 4.0-6.0'});
-  }else if(parseInt(req.params.year_id)-2020==5){
+  }else if(parseInt(req.query.year_id)-2020==5){
     res.render('earthquake', { prob: 'high', mag: 'Expected is 6.0-8.0'});
   }else{
-    let previous_five= Math.ceil(parseInt(req.params.year_id) / 5) * 5;
+    let previous_five= Math.ceil(parseInt(req.query.year_id) / 5) * 5;
     previous_five= previous_five-5;
-    if(parseInt(req.params.year_id)-previous_five<2.5){
+    if(parseInt(req.query.year_id)-previous_five<2.5){
       res.render('earthquake', { prob: 'low'});
-    }else if((parseInt(req.params.year_id)-previous_five)<5){
+    }else if((parseInt(req.query.year_id)-previous_five)<5){
       res.render('earthquake', { prob: 'moderate', mag: 'Exepected is 4.0-6.0'});
-    }else if(parseInt(req.params.year_id)-previous_five==5){
+    }else if(parseInt(req.query.year_id)-previous_five==5){
       res.render('earthquake', { prob: 'high', mag: 'Expected is 6.0-8.0'});
     }
   }
